@@ -15,8 +15,7 @@ daemon = False
 worker_temp_dir = '/dev/shm'
 reload = True
 
-# Gevent worker settings
-worker_class = 'gevent'
+worker_class = 'uvicorn.workers.UvicornWorker'
 worker_connections = 5000
 
 # These settings only really help with sync and thread
